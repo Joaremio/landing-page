@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -49,7 +50,7 @@ h6 {
 .main-content{
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 15rem var(--gap);
 }
 .section {
     min-height: 100vh;
@@ -63,4 +64,33 @@ h6 {
 }
 p{
     margin-bottom: 3rem;
+}
+
+.responsive-table{
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+table{
+    min-width: 360px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption{
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+table td , table th {
+    text-align: left;
+    padding: 0.5rem;
+    border: 0.1rem solid var(--light-gray-color);
+    white-space: nowrap;
+}
+
+
+tfoot td,table th{
+    background: var(--ligth-gray-color);
 }
